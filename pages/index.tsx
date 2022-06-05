@@ -60,10 +60,10 @@ const GetResume = () => (
 );
 
 const Ctas = () => (
-  <div className="flex gap-6">
+  <>
     <Contact />
     <GetResume />
-  </div>
+  </>
 );
 
 const Home: NextPage = () => {
@@ -74,8 +74,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col justify-center px-20 ">
-        <div className="flex flex-col gap-3">
+      <main className="flex w-full flex-1 flex-col justify-center px-3 sm:px-20">
+        <section className="flex flex-col gap-3">
           <h1 className="text-6xl font-bold">
             Hi , I'm <span className="text-blue-600">Meron</span>
           </h1>
@@ -85,13 +85,24 @@ const Home: NextPage = () => {
           </p>
 
           <SocialLinks />
-          <Ctas />
-        </div>
-      </main>
+        </section>
 
-      <footer className="flex justify-end pt-2 pr-4 w-full border-t border-gray-700">
-        <SocialLinks />
-      </footer>
+        <section className="flex gap-6 my-12">
+          <Ctas />
+        </section>
+
+        <section className="flex flex-col gap-5">
+          <h2 className="text-2xl font-bold">My Toolbox</h2>
+
+          <ul className="list-disc list-inside marker:text-blue-600">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node</li>
+            <li>GraphQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </section>
+      </main>
     </div>
   );
 };
