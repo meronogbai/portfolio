@@ -75,7 +75,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col justify-center px-3 sm:px-20">
-        <section className="flex flex-col gap-3">
+        <section className="flex flex-col gap-6">
           <h1 className="text-6xl font-bold">
             Hi , I'm <span className="text-blue-600">Meron</span>
           </h1>
@@ -98,10 +98,13 @@ const Home: NextPage = () => {
             <li>TypeScript</li>
             <li>React</li>
             <li>Node</li>
-            <li>GraphQL</li>
             <li>PostgreSQL</li>
+            <li>GraphQL</li>
           </ul>
         </section>
+        {/** todo: what i've been up to */}
+        {/** todo: blog posts */}
+        {/** todo: side projects */}
       </main>
     </div>
   );
