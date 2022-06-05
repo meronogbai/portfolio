@@ -1,6 +1,6 @@
 # Portfolio
 
-This repo hosts my personal dev portfolio.
+This repo hosts the source code of my [dev portfolio](https://meronogbai.me).
 
 ## Prerequisites
 
