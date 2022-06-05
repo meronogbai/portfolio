@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toolbox {
+  @apply list-inside columns-2 marker:text-blue-600;
+}
+
+.toolbox li {
+  list-style-type: "↣ ";
+}

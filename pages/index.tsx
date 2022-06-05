@@ -1,15 +1,9 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { Ctas, SocialLinks } from "../components";
 
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col py-2 bg-black text-gray-100">
-      <Head>
-        <title>Meron Ogbai</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="flex w-full flex-1 flex-col justify-center px-3 sm:px-20">
         <section className="flex flex-col gap-6">
           <h1 className="text-6xl font-bold">
@@ -30,12 +24,14 @@ const Home: NextPage = () => {
         <section className="flex flex-col gap-5">
           <h2 className="text-2xl font-bold">My Toolbox</h2>
 
-          <ul className="list-disc list-inside marker:text-blue-600">
+          <ul className="toolbox">
             <li>TypeScript</li>
             <li>React</li>
             <li>Node</li>
             <li>PostgreSQL</li>
             <li>GraphQL</li>
+            <li>Docker</li>
+            <li>Rails</li>
           </ul>
         </section>
         {/** todo: what i've been up to */}
