@@ -3,7 +3,7 @@ import { Ctas, SocialLinks } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col py-2 bg-black text-gray-100">
+    <div className="flex min-h-screen flex-col py-2 text-gray-100">
       <main className="flex w-full flex-1 flex-col justify-center px-3 sm:px-20">
         <section className="flex flex-col gap-6">
           <h1 className="text-6xl font-bold">
