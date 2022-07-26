@@ -31,7 +31,6 @@ const Home: NextPage = () => {
             <li>PostgreSQL</li>
             <li>GraphQL</li>
             <li>Docker</li>
-            <li>Rails</li>
           </ul>
         </section>
         {/** todo: what i've been up to */}

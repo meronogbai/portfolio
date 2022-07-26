@@ -7,7 +7,7 @@ body {
 }
 
 .toolbox {
-  @apply list-inside columns-2 marker:text-blue-600;
+  @apply max-w-lg list-inside columns-2 marker:text-blue-600;
 }
 
 .toolbox li {
