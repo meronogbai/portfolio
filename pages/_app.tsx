@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import { MetaTags } from "../components";
-import { useGoogleAnalytics } from "../lib";
+import { GoogleAnalyticsScripts, useGoogleAnalytics } from "../features";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <MetaTags />
+      <GoogleAnalyticsScripts />
       <Component {...pageProps} />
     </>
   );

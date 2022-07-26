@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
+import Script from "next/script";
 import { useEffect } from "react";
 
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "";
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 const pageView = (url: string) => {
@@ -11,7 +12,7 @@ const pageView = (url: string) => {
 };
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
-export const event = ({
+export const customGoogleAnalyticsEvent = ({
   action,
   category,
   label,
@@ -42,4 +43,30 @@ export const useGoogleAnalytics = () => {
       router.events.off("hashChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+};
+
+export const GoogleAnalyticsScripts = () => {
+  return (
+    <>
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+    </>
+  );
 };
