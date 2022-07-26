@@ -30,7 +30,7 @@ export const customGoogleAnalyticsEvent = ({
   });
 };
 
-export const useGoogleAnalytics = () => {
+const useGoogleAnalytics = () => {
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: string) => {
@@ -46,6 +46,8 @@ export const useGoogleAnalytics = () => {
 };
 
 export const GoogleAnalyticsScripts = () => {
+  useGoogleAnalytics();
+
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
