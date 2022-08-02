@@ -7,7 +7,7 @@ const Home: NextPage = () => {
       <main className="flex w-full flex-1 flex-col justify-center px-3 sm:px-20">
         <section className="flex flex-col gap-6">
           <h1 className="text-6xl font-bold">
-            Hi , I'm <span className="text-blue-600">Meron</span>
+            Hi, I'm <span className="text-blue-600">Meron</span>
           </h1>
 
           <p className="text-2xl">
