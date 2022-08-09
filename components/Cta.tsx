@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FileText, Mail } from "react-feather";
-import { customGoogleAnalyticsEvent } from "../features";
+import { customGoogleAnalyticsEvent } from "../lib";
 
 const EMAIL = "mailto:okbaymeron@gmail.com";
 const RESUME =
@@ -31,7 +31,7 @@ const GetResume = () => {
 };
 
 export const CtaSection = () => (
-  <section className="flex gap-6 my-12">
+  <section className="flex gap-6">
     <Contact />
     <GetResume />
   </section>

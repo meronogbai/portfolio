@@ -1,4 +1,4 @@
-export const Toolbox = () => {
+export const ToolboxSection = () => {
   return (
     <section className="flex flex-col gap-5">
       <h2 className="text-2xl font-bold">My Toolbox</h2>

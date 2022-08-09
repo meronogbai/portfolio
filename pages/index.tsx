@@ -1,14 +1,10 @@
 import type { NextPage } from "next";
-import {
-  CtaSection,
-  SocialLinks,
-  Toolbox as ToolboxSection,
-} from "../components";
+import { CtaSection, SocialLinks, ToolboxSection } from "../components";
 
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col py-2 text-gray-100">
-      <main className="flex w-full flex-1 flex-col justify-center px-3 sm:px-20">
+      <main className="flex w-full flex-1 flex-col justify-center px-3 sm:px-20 space-y-12">
         <section className="flex flex-col gap-6">
           <h1 className="text-6xl font-bold">
             Hi , I'm <span className="text-blue-600">Meron</span>
@@ -22,9 +18,8 @@ const Home: NextPage = () => {
         </section>
 
         <CtaSection />
-
         <ToolboxSection />
-        {/** todo: what i've been up to */}
+        {/* <ProjectsSection /> */}
       </main>
     </div>
   );

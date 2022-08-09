@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import { MetaTags } from "../components";
-import { GoogleAnalyticsScripts } from "../features";
+import { GoogleAnalyticsScripts } from "../lib";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
