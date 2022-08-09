@@ -30,7 +30,7 @@ export const customGoogleAnalyticsEvent = ({
   });
 };
 
-const useGoogleAnalytics = () => {
+export const GoogleAnalyticsScripts = () => {
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: string) => {
@@ -43,10 +43,6 @@ const useGoogleAnalytics = () => {
       router.events.off("hashChangeComplete", handleRouteChange);
     };
   }, [router.events]);
-};
-
-export const GoogleAnalyticsScripts = () => {
-  useGoogleAnalytics();
 
   return (
     <>
