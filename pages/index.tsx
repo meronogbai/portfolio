@@ -1,5 +1,10 @@
 import type { NextPage } from "next";
-import { CtaSection, SocialLinks, ToolboxSection } from "../components";
+import {
+  CtaSection,
+  ProjectsSection,
+  SocialLinks,
+  ToolboxSection,
+} from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +24,7 @@ const Home: NextPage = () => {
 
         <CtaSection />
         <ToolboxSection />
-        {/* <ProjectsSection /> */}
+        <ProjectsSection />
       </main>
     </div>
   );
