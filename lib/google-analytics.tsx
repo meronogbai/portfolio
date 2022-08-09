@@ -4,14 +4,14 @@ import { useEffect } from "react";
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+/** @see https://developers.google.com/analytics/devguides/collection/gtagjs/pages */
 const pageView = (url: string) => {
   window.gtag("config", GA_TRACKING_ID, {
     page_path: url,
   });
 };
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/events
+/** @see https://developers.google.com/analytics/devguides/collection/gtagjs/events */
 export const customGoogleAnalyticsEvent = ({
   action,
   category,
