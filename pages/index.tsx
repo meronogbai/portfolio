@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
         <CtaSection />
         <ToolboxSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
       </main>
     </div>
   );
