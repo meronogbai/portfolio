@@ -22,8 +22,11 @@ const GetResume = () => {
   };
 
   return (
-    <Link href={RESUME} onClick={handleGetResume}>
-      <a className="transition-colors border p-2 hover:bg-blue-600 hover:border-blue-600 rounded flex gap-1">
+    <Link href={RESUME}>
+      <a
+        className="transition-colors border p-2 hover:bg-blue-600 hover:border-blue-600 rounded flex gap-1"
+        onClick={handleGetResume}
+      >
         <FileText /> <span>Get Resume</span>
       </a>
     </Link>
