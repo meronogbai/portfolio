@@ -8,7 +8,7 @@ const RESUME =
 
 const Contact = () => (
   <Link href={EMAIL}>
-    <a className="border border-blue-600 p-2 bg-blue-600 rounded flex gap-1">
+    <a className="border border-blue-600 p-2 bg-blue-600 hover:bg-blue-500 hover:border-blue-500 rounded flex gap-1">
       <Mail /> <span>Contact Me</span>
     </a>
   </Link>
